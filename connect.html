@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AVS Prosperity - Connecting you to Financial Success</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 40px 20px;
+    color: #333;
+  }
+  img.logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+  }
+  h1 {
+    margin-bottom: 5px;
+    color: #007bff;
+  }
+  #tip {
+    font-style: italic;
+    margin: 20px auto;
+    max-width: 400px;
+    background: #f0f8ff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,123,255,0.2);
+  }
+  #countdown {
+    margin-top: 25px;
+    font-weight: bold;
+    color: #555;
+  }
+  a.redirect-link {
+    margin-top: 15px;
+    display: inline-block;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+  }
+  a.redirect-link:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+  <img src="assets\img\AVS Logo.png" alt="AVS Prosperity Logo" class="logo" />
+  <h1>Welcome to AVS Prosperity</h1>
+  <p>Thank you for connecting with us! Here's a free financial tip for you:</p>
+  
+  <div id="tip">Loading tip...</div>
+
+  <div id="countdown">Redirecting to WhatsApp in 5 seconds...</div>
+  <a href="#" id="manualRedirect" class="redirect-link" style="display:none;">Click here if you are not redirected</a>
+
+<script>
+  // List of financial tips
+  const tips = [
+    "Start saving early to take advantage of compound interest.",
+    "Diversify your investments to minimize risk.",
+    "Track your expenses to understand your spending habits.",
+    "Create an emergency fund covering at least 3-6 months of expenses.",
+    "Avoid high-interest debt to improve financial health.",
+    "Invest in a mix of assets for balanced growth.",
+    "Review your financial goals regularly and adjust as needed.",
+    "Consider tax-saving investments to maximize returns.",
+    "Keep insurance to protect yourself and your family.",
+    "Set a budget and stick to it to avoid overspending."
+  ];
+
+  // Pick a random tip
+  const randomTip = tips[Math.floor(Math.random() * tips.length)];
+  document.getElementById("tip").textContent = `"${randomTip}"`;
+
+  // WhatsApp redirect details
+  const founderNumber = "919323158021"; // founder WhatsApp number
+  const message = "Hey Archana, I'm interested in your financial services!";
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappURL = `https://wa.me/${founderNumber}?text=${encodedMessage}`;
+
+  // Countdown timer and redirect logic
+  let countdown = 5;
+  const countdownDiv = document.getElementById("countdown");
+  const manualLink = document.getElementById("manualRedirect");
+  manualLink.href = whatsappURL;
+
+  const interval = setInterval(() => {
+    countdown--;
+    if (countdown <= 0) {
+      clearInterval(interval);
+      window.location.href = whatsappURL;
+    } else {
+      countdownDiv.textContent = `Redirecting to WhatsApp in ${countdown} seconds...`;
+    }
+  }, 1000);
+</script>
+
+</body>
+</html>
