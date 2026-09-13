@@ -1,164 +1,127 @@
-/**
-* Template Name: Nova
-* Template URL: https://bootstrapmade.com/nova-bootstrap-business-template/
-* Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-(function() {
+(function () {
   "use strict";
 
-  /**
-   * Apply .scrolled class to the body as the page is scrolled down
-   */
   function toggleScrolled() {
-    const selectBody = document.querySelector('body');
-    const selectHeader = document.querySelector('#header');
-    if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
-    window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
+    const isScrolled = window.scrollY > 40;
+    document.body.classList.toggle('scrolled', isScrolled);
   }
 
-  document.addEventListener('scroll', toggleScrolled);
+  document.addEventListener('scroll', toggleScrolled, { passive: true });
   window.addEventListener('load', toggleScrolled);
 
-  /**
-   * Mobile nav toggle
-   */
-  const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
+  // Mobile Navigation Toggle
+  const mobileToggle = document.querySelector('.mobile-nav-toggle');
+  const nav = document.getElementById('navmenu');
 
-  function mobileNavToogle() {
-    document.querySelector('body').classList.toggle('mobile-nav-active');
-    mobileNavToggleBtn.classList.toggle('bi-list');
-    mobileNavToggleBtn.classList.toggle('bi-x');
-  }
-  mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
-
-  /**
-   * Hide mobile nav on same-page/hash links
-   */
-  document.querySelectorAll('#navmenu a').forEach(navmenu => {
-    navmenu.addEventListener('click', () => {
-      if (document.querySelector('.mobile-nav-active')) {
-        mobileNavToogle();
-      }
+  if (mobileToggle && nav) {
+    mobileToggle.addEventListener('click', function () {
+      const isOpen = nav.classList.toggle('active');
+      mobileToggle.classList.toggle('bi-list', !isOpen);
+      mobileToggle.classList.toggle('bi-x', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
     });
 
-  });
-
-  /**
-   * Toggle mobile nav dropdowns
-   */
-  document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
-    navmenu.addEventListener('click', function(e) {
-      e.preventDefault();
-      this.parentNode.classList.toggle('active');
-      this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
-      e.stopImmediatePropagation();
-    });
-  });
-
-  /**
-   * Preloader
-   */
-  const preloader = document.querySelector('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove();
-    });
-  }
-
-  /**
-   * Scroll top button
-   */
-  let scrollTop = document.querySelector('.scroll-top');
-
-  function toggleScrollTop() {
-    if (scrollTop) {
-      window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
-    }
-  }
-  scrollTop.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
-
-  window.addEventListener('load', toggleScrollTop);
-  document.addEventListener('scroll', toggleScrollTop);
-
-  /**
-   * Animation on scroll function and init
-   */
-  function aosInit() {
-    AOS.init({
-      duration: 600,
-      easing: 'ease-in-out',
-      once: true,
-      mirror: false
-    });
-  }
-  window.addEventListener('load', aosInit);
-
-  /**
-   * Initiate glightbox
-   */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
-
-  /**
-   * Init swiper sliders
-   */
-  function initSwiper() {
-    document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
-      let config = JSON.parse(
-        swiperElement.querySelector(".swiper-config").innerHTML.trim()
-      );
-
-      if (swiperElement.classList.contains("swiper-tab")) {
-        initSwiperWithCustomPagination(swiperElement, config);
-      } else {
-        new Swiper(swiperElement, config);
-      }
-    });
-  }
-
-  window.addEventListener("load", initSwiper);
-
-  /**
-   * Init isotope layout and filters
-   */
-  document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
-    let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
-    let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
-    let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
-
-    let initIsotope;
-    imagesLoaded(isotopeItem.querySelector('.isotope-container'), function() {
-      initIsotope = new Isotope(isotopeItem.querySelector('.isotope-container'), {
-        itemSelector: '.isotope-item',
-        layoutMode: layout,
-        filter: filter,
-        sortBy: sort
+    nav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        if (window.innerWidth < 992) {
+          nav.classList.remove('active');
+          mobileToggle.classList.add('bi-list');
+          mobileToggle.classList.remove('bi-x');
+          document.body.style.overflow = '';
+        }
       });
     });
+  }
 
-    isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
-      filters.addEventListener('click', function() {
-        isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
-        this.classList.add('filter-active');
-        initIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-        if (typeof aosInit === 'function') {
-          aosInit();
+  // Mobile Tab Switcher for Pillars (Prosperity vs Protection)
+  const pillarTabs = document.querySelectorAll('.pillar-tab-btn');
+  if (pillarTabs.length > 0) {
+    pillarTabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        const target = this.getAttribute('data-target');
+        pillarTabs.forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+
+        const pillarProsperity = document.getElementById('pillar-prosperity');
+        const pillarProtection = document.getElementById('pillar-protection');
+
+        if (target === 'prosperity' && pillarProsperity && pillarProtection) {
+          pillarProsperity.classList.add('active-mobile-pillar');
+          pillarProtection.classList.remove('active-mobile-pillar');
+        } else if (target === 'protection' && pillarProsperity && pillarProtection) {
+          pillarProtection.classList.add('active-mobile-pillar');
+          pillarProsperity.classList.remove('active-mobile-pillar');
         }
-      }, false);
+      });
+    });
+  }
+
+  // Scroll Top
+  const scrollTop = document.getElementById('scroll-top');
+  if (scrollTop) {
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 300) {
+        scrollTop.classList.add('active');
+      } else {
+        scrollTop.classList.remove('active');
+      }
     });
 
-  });
+    scrollTop.addEventListener('click', function (event) {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
 
+  // Interactive Claim Steps (if present on claim-assistance.html)
+  const claimSteps = document.querySelectorAll('.claim-step-card');
+  if (claimSteps.length > 0) {
+    claimSteps.forEach(function(step) {
+      step.addEventListener('click', function() {
+        claimSteps.forEach(s => s.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  }
+
+  // Consultation Form Handler (if present)
+  const consultForm = document.querySelector('.consultation-form');
+  if (consultForm) {
+    consultForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const btn = consultForm.querySelector('button[type="submit"]');
+      const originalText = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerHTML = 'Sending Request...';
+      
+      setTimeout(function () {
+        btn.disabled = false;
+        btn.innerHTML = 'Request Submitted Successfully ✓';
+        consultForm.reset();
+        setTimeout(function() {
+          btn.innerHTML = originalText;
+        }, 4000);
+      }, 1200);
+    });
+  }
+
+  // AOS Init
+  if (window.AOS) {
+    AOS.init({
+      duration: 450,
+      once: true,
+      easing: 'ease-in-out'
+    });
+  }
+
+  // Preloader
+  const preloader = document.getElementById('preloader');
+  if (preloader) {
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        preloader.style.opacity = '0';
+        setTimeout(function () { preloader.remove(); }, 300);
+      }, 150);
+    });
+  }
 })();
