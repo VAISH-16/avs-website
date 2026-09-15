@@ -6,7 +6,7 @@
 const CACHE_KEY = 'avs_google_reviews_cache_v2';
 const CACHE_TTL_MS = 60 * 60 * 1000; // 1 Hour Cache TTL
 
-export const DEFAULT_GOOGLE_MAPS_URL = "https://www.google.com/maps/search/?api=1&query=AVS+Prosperity+Consultancy+Goregaon+East+Mumbai";
+export const DEFAULT_GOOGLE_MAPS_URL = "https://share.google/rbwqxfXcmvm1QSAQi";
 export const GOOGLE_REVIEW_URL = "https://g.page/r/Cabc9dnxr-WuEAE/review";
 
 /**

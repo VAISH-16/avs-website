@@ -4,7 +4,7 @@ import ConsultationForm from '../components/ConsultationForm';
 export default function Contact() {
   return (
     <main className="main pt-5">
-      
+
       {/* Page Header */}
       <section className="page-header py-5 dark-background text-light text-center">
         <div className="container py-4">
@@ -24,7 +24,7 @@ export default function Contact() {
       {/* Contact Cards & Social Channels */}
       <section className="section py-5 bg-ivory">
         <div className="container py-4">
-          
+
           {/* Main 3 Info Cards */}
           <div className="row g-4 mb-5">
             <div className="col-md-4">
@@ -34,7 +34,7 @@ export default function Contact() {
                 </div>
                 <h4 className="font-serif fw-bold" style={{ color: '#0B1F33' }}>Advisory Office</h4>
                 <p className="text-muted fs-7 mb-0 lh-base">
-                  Goregaon East, Mumbai,<br />Maharashtra 400065, India
+                  Bimbisar Nagar, Goregaon East,<br />Mumbai, Maharashtra 400065, India
                 </p>
               </div>
             </div>
@@ -59,7 +59,7 @@ export default function Contact() {
                 </div>
                 <h4 className="font-serif fw-bold" style={{ color: '#0B1F33' }}>Email Inquiry</h4>
                 <p className="text-muted fs-7 mb-0 lh-base">
-                  <a href="mailto:arssalunkhe79@gmail.com" className="text-dark hover-gold font-medium d-block">arssalunkhe79@gmail.com</a>
+                  <a href="mailto:avsprosperity@gmail.com" className="text-dark hover-gold font-medium d-block">avsprosperity@gmail.com</a>
                   <span className="fs-8 text-muted d-block mt-1">Direct Advisor Inbox</span>
                 </p>
               </div>
@@ -146,26 +146,167 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Map & Form Grid */}
-      <section className="section py-5 bg-white">
+      {/* Interactive Google Maps & Office Location Section */}
+      <section className="section py-5 bg-white border-top border-gold-subtle">
         <div className="container py-4">
-          <div className="row gy-5">
+          <div className="text-center mb-5">
+            <div className="d-inline-flex align-items-center gap-2 mb-2 px-3 py-1 rounded-pill" style={{ backgroundColor: 'rgba(201, 162, 77, 0.12)', border: '1px solid rgba(201, 162, 77, 0.35)' }}>
+              <i className="bi bi-geo-alt-fill" style={{ color: '#C9A24D' }}></i>
+              <span className="fs-8 text-uppercase tracking-widest font-sans fw-bold" style={{ color: '#C9A24D' }}>
+                OFFICIAL GOOGLE MAPS LOCATION
+              </span>
+            </div>
+            <h2 className="display-6 font-serif fw-bold" style={{ color: '#0B1F33' }}>
+              Visit AVS Prosperity Advisory Office
+            </h2>
+            <p className="text-muted font-serif max-w-2xl mx-auto fs-6">
+              Our office is located at Bimbisar Nagar in Goregaon East, Mumbai. Use the interactive map below or click to get direct turn-by-turn navigation.
+            </p>
+          </div>
+
+          <div className="row gy-5 align-items-stretch">
+            {/* Column 1: Interactive Map Display */}
             <div className="col-lg-6">
-              <div className="h-100 rounded-4 overflow-hidden shadow-sm border border-gold-subtle">
-                <iframe
-                  title="AVS Prosperity Office Location Goregaon East"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.665979261895!2d72.8596637!3d19.1661601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7a42a000001%3A0x6b876409c9918731!2sGoregaon%20East%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-                  width="100%"
-                  height="100%"
-                  style={{ minHeight: '400px', border: 0 }}
-                  allowFullScreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
+              <div className="h-100 rounded-4 overflow-hidden shadow-sm border border-gold-subtle d-flex flex-column bg-white position-relative">
+                <div className="p-3 text-white d-flex align-items-center justify-content-between border-bottom" style={{ backgroundColor: '#0B1F33' }}>
+                  <div className="d-flex align-items-center gap-2">
+                    <i className="bi bi-pin-map-fill fs-5" style={{ color: '#C9A24D' }}></i>
+                    <span className="font-serif fw-bold fs-7 text-white">Interactive Location Map</span>
+                  </div>
+                  <span className="badge rounded-pill font-sans fs-8 px-2.5 py-1" style={{ backgroundColor: 'rgba(201, 162, 77, 0.2)', color: '#C9A24D', border: '1px solid rgba(201, 162, 77, 0.4)' }}>
+                    Bimbisar Nagar, Mumbai
+                  </span>
+                </div>
+
+                <div className="flex-grow-1 w-100 position-relative" style={{ minHeight: '400px' }}>
+                  <iframe
+                    title="AVS Prosperity Official Office Location - Bimbisar Nagar, Goregaon East, Mumbai"
+                    src="https://maps.google.com/maps?q=Bimbisar+Nagar,+Goregaon+East,+Mumbai,+Maharashtra+400065,India&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                    width="100%"
+                    height="100%"
+                    style={{ minHeight: '400px', border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+
+                <div className="p-3 bg-light border-top d-flex flex-wrap align-items-center justify-content-between gap-2">
+                  <span className="fs-8 text-muted d-flex align-items-center gap-1">
+                    <i className="bi bi-info-circle-fill text-gold-accent" style={{ color: '#C9A24D' }}></i>
+                    Pinch or scroll to zoom map
+                  </span>
+                  <a
+                    href="https://share.google/rbwqxfXcmvm1QSAQi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="fs-8 fw-bold text-decoration-none d-inline-flex align-items-center gap-1"
+                    style={{ color: '#0B1F33' }}
+                  >
+                    Open Full Google Map <i className="bi bi-box-arrow-up-right fs-8" style={{ color: '#C9A24D' }}></i>
+                  </a>
+                </div>
               </div>
             </div>
+
+            {/* Column 2: Office Details & Navigation Actions */}
             <div className="col-lg-6">
-              <ConsultationForm title="Book Your Appointment" subtitle="Fill out the form below to request a meeting with Mrs. Archana Ssalunkhe." />
+              <div className="card h-100 p-4 p-md-5 rounded-4 shadow-sm border border-gold-subtle bg-white d-flex flex-column justify-content-between">
+                <div>
+                  <div className="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+                    <span className="badge px-3 py-2 rounded-pill font-sans fs-8 fw-bold text-uppercase" style={{ backgroundColor: 'rgba(201, 162, 77, 0.12)', color: '#C9A24D', border: '1px solid rgba(201, 162, 77, 0.4)' }}>
+                      ISO 9001:2015 CERTIFIED ADVISORY OFFICE
+                    </span>
+                  </div>
+
+                  <h3 className="h4 font-serif fw-bold mb-3" style={{ color: '#0B1F33' }}>
+                    AVS Prosperity Advisory Desk
+                  </h3>
+
+                  {/* Address Section */}
+                  <div className="p-3 rounded-3 mb-4" style={{ backgroundColor: 'rgba(11, 31, 51, 0.03)', borderLeft: '4px solid #C9A24D' }}>
+                    <div className="d-flex align-items-start gap-3">
+                      <div className="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 mt-1" style={{ width: '38px', height: '38px', backgroundColor: 'rgba(201, 162, 77, 0.15)', color: '#C9A24D' }}>
+                        <i className="bi bi-geo-alt-fill fs-5"></i>
+                      </div>
+                      <div>
+                        <span className="fs-8 text-uppercase tracking-wider font-sans fw-bold d-block text-muted mb-1">
+                          OFFICIAL GOOGLE MAPS ADDRESS
+                        </span>
+                        <p className="font-medium fs-6 text-dark mb-0 lh-base">
+                          Bimbisar Nagar, Goregaon East,<br />
+                          Mumbai, Maharashtra 400065, India
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Key Office Info Grid */}
+                  <div className="row g-3 mb-4">
+                    <div className="col-sm-6">
+                      <div className="d-flex align-items-start gap-2">
+                        <i className="bi bi-clock-fill fs-5" style={{ color: '#C9A24D' }}></i>
+                        <div>
+                          <strong className="d-block fs-7 text-dark">Advisory Hours</strong>
+                          <span className="fs-8 text-muted d-block">Mon – Sat: 10:00 AM – 7:00 PM</span>
+                          <span className="fs-8 text-muted fst-italic">(By Appointment)</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-sm-6">
+                      <div className="d-flex align-items-start gap-2">
+                        <i className="bi bi-telephone-fill fs-5" style={{ color: '#C9A24D' }}></i>
+                        <div>
+                          <strong className="d-block fs-7 text-dark">Helpline Desk</strong>
+                          <a href="tel:+919322947512" className="fs-8 text-dark hover-gold font-medium d-block text-decoration-none">+91 93229 47512</a>
+                          <a href="tel:+919372233501" className="fs-8 text-dark hover-gold font-medium d-block text-decoration-none">+91 93722 33501</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                {/* Google Maps Action Buttons */}
+                <div className="pt-4 border-top border-gold-subtle">
+                  <div className="d-flex flex-column flex-sm-row gap-3">
+                    {/* Get Directions Button */}
+                    <a
+                      href="https://www.google.com/maps/dir/?api=1&destination=Bimbisar+Nagar,+Goregaon+East,+Mumbai,+Maharashtra+400065"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn px-4 py-3 rounded-3 font-sans fw-bold d-inline-flex align-items-center justify-content-center gap-2 hover-lift flex-grow-1 shadow-sm text-decoration-none"
+                      style={{ backgroundColor: '#C9A24D', color: '#0B1F33', border: 'none' }}
+                    >
+                      <i className="bi bi-sign-turn-right-fill fs-5"></i>
+                      <span>Get Directions</span>
+                    </a>
+
+                    {/* View on Google Maps Button */}
+                    <a
+                      href="https://share.google/rbwqxfXcmvm1QSAQi"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn px-4 py-3 rounded-3 font-sans fw-bold d-inline-flex align-items-center justify-content-center gap-2 hover-lift flex-grow-1 text-decoration-none"
+                      style={{ backgroundColor: 'transparent', color: '#0B1F33', border: '1.5px solid #0B1F33' }}
+                    >
+                      <i className="bi bi-geo-alt-fill fs-5" style={{ color: '#C9A24D' }}></i>
+                      <span>View on Google Maps</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Appointment Consultation Form Section */}
+      <section className="section py-5 bg-ivory">
+        <div className="container py-4">
+          <div className="row justify-content-center">
+            <div className="col-lg-8">
+              <ConsultationForm title="Book Your Appointment" subtitle="Fill out the form below to request a confidential meeting with Mrs. Archana Ssalunkhe & advisory team." />
             </div>
           </div>
         </div>
