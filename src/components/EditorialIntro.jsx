@@ -35,7 +35,7 @@ export default function EditorialIntro({ onOpenModal }) {
   return (
     <section className="section py-5 bg-ivory position-relative border-bottom border-gold-subtle">
       <div className="container py-4">
-        
+
         {/* Editorial Heading */}
         <div className="row justify-content-center text-center mb-5">
           <div className="col-lg-9 col-xl-8">
@@ -50,7 +50,7 @@ export default function EditorialIntro({ onOpenModal }) {
               Your goals, responsibilities and future are unique. Your financial strategy should be too.
             </p>
             <p className="font-sans text-muted fs-6 mb-0">
-              At AVS Prosperity Consultancy, we focus on understanding your needs before helping you explore suitable financial solutions.
+              At AVS MERIDIAN Consultancy, we focus on understanding your needs before helping you explore suitable financial solutions.
             </p>
           </div>
         </div>
@@ -76,7 +76,7 @@ export default function EditorialIntro({ onOpenModal }) {
 
         {/* CTA */}
         <div className="text-center">
-          <button 
+          <button
             onClick={handleCTAClick}
             className="btn btn-luxury-gold px-5 py-3 text-uppercase tracking-wider fw-bold shadow-sm"
             style={{ background: '#C9A24D', color: '#0B1F33', border: 'none' }}

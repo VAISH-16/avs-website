@@ -19,14 +19,14 @@ export default function MotorInsurancePage() {
         <div className="container py-4">
 
           {/* Real-Life Scenario Section */}
-          <RealLifeStoryCard 
+          <RealLifeStoryCard
             badge="REAL-LIFE MOTOR SCENARIO"
             icon="bi-car-front-fill"
             title="Late Night Highway Collision: Zero Cash Out-of-Pocket"
             scenarioText='Imagine driving your family home on a rainy midnight highway. Suddenly, a heavy branch collapses onto the road, severely damaging your windshield, bumper, radiator, and engine bay. You are stranded far from home in the dark. With AVS Zero-Depreciation Motor Insurance, a quick call to our 24x7 desk dispatches emergency towing straight to an authorized network garage. Repairs amounting to ₹1.75 Lakhs for metal, bumper, and engine parts are covered 100% cashless. You return home safely without paying a single rupee out of pocket for depreciation deductions.'
             withoutProtection="Car owners are stuck paying 50% out-of-pocket for plastic and rubber part replacements, plus expensive towing and surveyor hassles."
             withAvsProtection="Full zero-dep replacement payout, instant roadside assistance, and direct settlement with 4,000+ cashless network garages."
-            claimAssistancePerk="AVS Prosperity Consultancy coordinates surveyor inspection, garage approval, and claims filing so your car is restored swiftly without stress."
+            claimAssistancePerk="AVS MERIDIAN Consultancy coordinates surveyor inspection, garage approval, and claims filing so your car is restored swiftly without stress."
             ctaText="Get Zero-Dep Auto Cover"
             ctaLink="#consultation-form"
           />

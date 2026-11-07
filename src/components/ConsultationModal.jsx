@@ -65,24 +65,24 @@ export default function ConsultationModal({ isOpen, onClose, initialRequirement 
   };
 
   return (
-    <div 
-      className="modal fade show d-block" 
-      tabIndex="-1" 
+    <div
+      className="modal fade show d-block"
+      tabIndex="-1"
       style={{ backgroundColor: 'rgba(15, 61, 46, 0.75)', backdropFilter: 'blur(6px)', zIndex: 1055 }}
       onClick={handleClose}
     >
-      <div 
-        className="modal-dialog modal-dialog-centered modal-lg" 
+      <div
+        className="modal-dialog modal-dialog-centered modal-lg"
         onClick={e => e.stopPropagation()}
       >
         <div className="modal-content border-0 rounded-4 shadow-lg overflow-hidden" style={{ background: '#F8F6F0' }}>
-          
+
           {/* Header */}
           <div className="modal-header border-bottom border-gold-subtle p-4 bg-white position-relative d-flex align-items-center justify-content-between">
             <div className="d-flex align-items-center gap-3">
-              <img 
-                src="/assets/img/avs-logo.png" 
-                alt="AVS Prosperity Logo" 
+              <img
+                src="/assets/img/avs-logo.png"
+                alt="AVS MERIDIAN Logo"
                 className="rounded-2 shadow-sm border border-gold-subtle"
                 style={{ height: '48px', width: 'auto', objectFit: 'contain', backgroundColor: '#FFFFFF', padding: '2px' }}
               />
@@ -95,10 +95,10 @@ export default function ConsultationModal({ isOpen, onClose, initialRequirement 
                 </h3>
               </div>
             </div>
-            <button 
-              type="button" 
-              className="btn-close me-1" 
-              onClick={handleClose} 
+            <button
+              type="button"
+              className="btn-close me-1"
+              onClick={handleClose}
               aria-label="Close"
             ></button>
           </div>
@@ -115,8 +115,8 @@ export default function ConsultationModal({ isOpen, onClose, initialRequirement 
                 <p className="lead font-serif text-secondary mb-4">
                   Thank you. Our team will get in touch with you shortly.
                 </p>
-                <button 
-                  type="button" 
+                <button
+                  type="button"
                   className="btn btn-luxury-gold px-5 py-3 text-uppercase tracking-wider fw-bold"
                   style={{ background: '#C9A24D', color: '#0B1F33', border: 'none' }}
                   onClick={handleClose}
@@ -139,10 +139,10 @@ export default function ConsultationModal({ isOpen, onClose, initialRequirement 
                 <div className="row g-3">
                   <div className="col-md-6">
                     <label className="form-label text-dark fs-7 fw-bold">Full Name *</label>
-                    <input 
-                      type="text" 
+                    <input
+                      type="text"
                       name="name"
-                      className="form-control luxury-input" 
+                      className="form-control luxury-input"
                       value={formData.name}
                       onChange={handleChange}
                       required
@@ -151,10 +151,10 @@ export default function ConsultationModal({ isOpen, onClose, initialRequirement 
 
                   <div className="col-md-6">
                     <label className="form-label text-dark fs-7 fw-bold">Mobile Number *</label>
-                    <input 
-                      type="tel" 
+                    <input
+                      type="tel"
                       name="phone"
-                      className="form-control luxury-input" 
+                      className="form-control luxury-input"
                       value={formData.phone}
                       onChange={handleChange}
                       required
@@ -163,10 +163,10 @@ export default function ConsultationModal({ isOpen, onClose, initialRequirement 
 
                   <div className="col-md-6">
                     <label className="form-label text-dark fs-7 fw-bold">Email Address</label>
-                    <input 
-                      type="email" 
+                    <input
+                      type="email"
                       name="email"
-                      className="form-control luxury-input" 
+                      className="form-control luxury-input"
                       value={formData.email}
                       onChange={handleChange}
                     />
@@ -191,9 +191,9 @@ export default function ConsultationModal({ isOpen, onClose, initialRequirement 
 
                   <div className="col-12">
                     <label className="form-label text-dark fs-7 fw-bold">Tell us a little about your requirement (Optional)</label>
-                    <textarea 
+                    <textarea
                       name="message"
-                      className="form-control luxury-input" 
+                      className="form-control luxury-input"
                       rows="3"
                       value={formData.message}
                       onChange={handleChange}
@@ -202,8 +202,8 @@ export default function ConsultationModal({ isOpen, onClose, initialRequirement 
                 </div>
 
                 <div className="mt-4 pt-2 text-center">
-                  <button 
-                    type="submit" 
+                  <button
+                    type="submit"
                     className="btn btn-luxury-gold w-100 py-3 text-uppercase tracking-wider fw-bold fs-6 shadow-sm rounded-pill"
                     style={{ background: '#C9A24D', color: '#0B1F33', border: '2px solid #0B1F33' }}
                     disabled={status === 'submitting'}

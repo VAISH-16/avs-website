@@ -19,14 +19,14 @@ export default function BusinessInsurancePage() {
         <div className="container py-4">
 
           {/* Real-Life Scenario Section */}
-          <RealLifeStoryCard 
+          <RealLifeStoryCard
             badge="REAL-LIFE BUSINESS SCENARIO"
             icon="bi-building-fill"
             title="Factory Fire Emergency: Fast-Tracking Business Survival & Recovery"
-            scenarioText='At 2:00 AM on a festival holiday, an electrical short-circuit triggers a massive fire in a manufacturing warehouse, destroying ₹65 Lakhs worth of finished goods inventory, raw materials, and precision CNC machinery. Without proper commercial insurance, a business built across 15 years faces instant bankruptcy, employee layoffs, and ruined vendor relationships. Because the founder secured Commercial Fire & Special Perils Cover guided by AVS Prosperity Consultancy, an emergency surveyor inspection was deployed within 24 hours. Replacement machinery and stock losses were fully reimbursed, enabling full factory revival without defaulting on payroll or customer orders.'
+            scenarioText='At 2:00 AM on a festival holiday, an electrical short-circuit triggers a massive fire in a manufacturing warehouse, destroying ₹65 Lakhs worth of finished goods inventory, raw materials, and precision CNC machinery. Without proper commercial insurance, a business built across 15 years faces instant bankruptcy, employee layoffs, and ruined vendor relationships. Because the founder secured Commercial Fire & Special Perils Cover guided by AVS MERIDIAN Consultancy, an emergency surveyor inspection was deployed within 24 hours. Replacement machinery and stock losses were fully reimbursed, enabling full factory revival without defaulting on payroll or customer orders.'
             withoutProtection="Business owners suffer catastrophic capital loss, severe operational shutdowns, personal liability for debts, and potential business closure."
             withAvsProtection="100% asset loss recovery, machinery breakdown replacement, business interruption profit protection, and group employee mediclaim."
-            claimAssistancePerk="AVS Prosperity Consultancy acts as your corporate claim advocate — managing TPA surveyors, policy documentation, and speedy claim payout disbursement."
+            claimAssistancePerk="AVS MERIDIAN Consultancy acts as your corporate claim advocate — managing TPA surveyors, policy documentation, and speedy claim payout disbursement."
             ctaText="Audit Your Business Insurance"
             ctaLink="#consultation-form"
           />

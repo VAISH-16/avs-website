@@ -46,8 +46,8 @@ export default function Contact() {
                 </div>
                 <h4 className="font-serif fw-bold" style={{ color: '#0B1F33' }}>Helpline Numbers</h4>
                 <p className="text-muted fs-7 mb-0 lh-base">
-                  <a href="tel:+919322947512" className="text-dark hover-gold font-medium d-block">+91 93229 47512</a>
-                  <a href="tel:+919372233501" className="text-dark hover-gold font-medium d-block">+91 93722 33501</a>
+                  <a href="tel:+919833798525" className="text-dark hover-gold font-medium d-block">+91 93229 47512</a>
+                  <a href="tel:+919930315079" className="text-dark hover-gold font-medium d-block">+91 93722 33501</a>
                 </p>
               </div>
             </div>
@@ -59,7 +59,7 @@ export default function Contact() {
                 </div>
                 <h4 className="font-serif fw-bold" style={{ color: '#0B1F33' }}>Email Inquiry</h4>
                 <p className="text-muted fs-7 mb-0 lh-base">
-                  <a href="mailto:avsprosperity@gmail.com" className="text-dark hover-gold font-medium d-block">avsprosperity@gmail.com</a>
+                  <a href="mailto:avsmeridian@gmail.com" className="text-dark hover-gold font-medium d-block">avsmeridian@gmail.com</a>
                   <span className="fs-8 text-muted d-block mt-1">Direct Advisor Inbox</span>
                 </p>
               </div>
@@ -81,7 +81,7 @@ export default function Contact() {
               {/* Call */}
               <div className="col-6 col-md-3">
                 <a
-                  href="tel:+919322947512"
+                  href="tel:+919833798525"
                   className="card h-100 p-3 rounded-4 shadow-sm border-0 bg-white text-decoration-none text-center d-flex flex-column align-items-center justify-content-center hover-lift transition-all"
                 >
                   <div className="rounded-circle d-flex align-items-center justify-content-center mb-2" style={{ width: '48px', height: '48px', backgroundColor: 'rgba(201, 162, 77, 0.12)', color: '#C9A24D' }}>
@@ -95,7 +95,7 @@ export default function Contact() {
               {/* WhatsApp */}
               <div className="col-6 col-md-3">
                 <a
-                  href="https://wa.me/+919322947512"
+                  href="https://wa.me/+919833798525"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="card h-100 p-3 rounded-4 shadow-sm border-0 bg-white text-decoration-none text-center d-flex flex-column align-items-center justify-content-center hover-lift transition-all"
@@ -111,7 +111,7 @@ export default function Contact() {
               {/* LinkedIn */}
               <div className="col-6 col-md-3">
                 <a
-                  href="https://www.linkedin.com/company/avs-prosperity-consultancy"
+                  href="https://www.linkedin.com/company/avs-meridian-consultancy"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="card h-100 p-3 rounded-4 shadow-sm border-0 bg-white text-decoration-none text-center d-flex flex-column align-items-center justify-content-center hover-lift transition-all"
@@ -120,14 +120,14 @@ export default function Contact() {
                     <i className="bi bi-linkedin fs-4"></i>
                   </div>
                   <span className="fw-bold fs-7 text-dark d-block">LinkedIn</span>
-                  <span className="fs-8 text-muted">AVS Prosperity</span>
+                  <span className="fs-8 text-muted">AVS MERIDIAN</span>
                 </a>
               </div>
 
               {/* Instagram */}
               <div className="col-6 col-md-3">
                 <a
-                  href="https://www.instagram.com/avsprosperityconsultancy?igsh=MW9iejVrbGxzMGx0Yg=="
+                  href="https://www.instagram.com/avsmeridianconsultancy?igsh=MW9iejVrbGxzMGx0Yg=="
                   target="_blank"
                   rel="noopener noreferrer"
                   className="card h-100 p-3 rounded-4 shadow-sm border-0 bg-white text-decoration-none text-center d-flex flex-column align-items-center justify-content-center hover-lift transition-all"
@@ -136,7 +136,7 @@ export default function Contact() {
                     <i className="bi bi-instagram fs-4"></i>
                   </div>
                   <span className="fw-bold fs-7 text-dark d-block">Instagram</span>
-                  <span className="fs-8 text-muted">@avsprosperityconsultancy</span>
+                  <span className="fs-8 text-muted">@avsmeridianconsultancy</span>
                 </a>
               </div>
 
@@ -157,7 +157,7 @@ export default function Contact() {
               </span>
             </div>
             <h2 className="display-6 font-serif fw-bold" style={{ color: '#0B1F33' }}>
-              Visit AVS Prosperity Advisory Office
+              Visit AVS MERIDIAN Advisory Office
             </h2>
             <p className="text-muted font-serif max-w-2xl mx-auto fs-6">
               Our office is located at Bimbisar Nagar in Goregaon East, Mumbai. Use the interactive map below or click to get direct turn-by-turn navigation.
@@ -180,7 +180,7 @@ export default function Contact() {
 
                 <div className="flex-grow-1 w-100 position-relative" style={{ minHeight: '400px' }}>
                   <iframe
-                    title="AVS Prosperity Official Office Location - Bimbisar Nagar, Goregaon East, Mumbai"
+                    title="AVS MERIDIAN Official Office Location - Bimbisar Nagar, Goregaon East, Mumbai"
                     src="https://maps.google.com/maps?q=Bimbisar+Nagar,+Goregaon+East,+Mumbai,+Maharashtra+400065,India&t=&z=16&ie=UTF8&iwloc=&output=embed"
                     width="100%"
                     height="100%"
@@ -220,7 +220,7 @@ export default function Contact() {
                   </div>
 
                   <h3 className="h4 font-serif fw-bold mb-3" style={{ color: '#0B1F33' }}>
-                    AVS Prosperity Advisory Desk
+                    AVS MERIDIAN Advisory Desk
                   </h3>
 
                   {/* Address Section */}
@@ -258,8 +258,8 @@ export default function Contact() {
                         <i className="bi bi-telephone-fill fs-5" style={{ color: '#C9A24D' }}></i>
                         <div>
                           <strong className="d-block fs-7 text-dark">Helpline Desk</strong>
-                          <a href="tel:+919322947512" className="fs-8 text-dark hover-gold font-medium d-block text-decoration-none">+91 93229 47512</a>
-                          <a href="tel:+919372233501" className="fs-8 text-dark hover-gold font-medium d-block text-decoration-none">+91 93722 33501</a>
+                          <a href="tel:+919833798525" className="fs-8 text-dark hover-gold font-medium d-block text-decoration-none">+91 93229 47512</a>
+                          <a href="tel:+919930315079" className="fs-8 text-dark hover-gold font-medium d-block text-decoration-none">+91 93722 33501</a>
                         </div>
                       </div>
                     </div>

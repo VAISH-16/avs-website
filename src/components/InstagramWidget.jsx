@@ -25,7 +25,7 @@ export default function InstagramWidget() {
   return (
     <section className="section py-5 bg-white border-top border-gold-subtle">
       <div className="container py-4">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-4">
           <div className="d-inline-flex align-items-center gap-2 px-3 py-1.5 rounded-pill bg-gold-subtle border border-gold-accent mb-3">
@@ -34,9 +34,9 @@ export default function InstagramWidget() {
               INSTAGRAM FEED
             </span>
           </div>
-          
+
           <h2 className="display-5 font-serif fw-bold mb-2" style={{ color: '#0B1F33' }}>
-            Follow AVS Prosperity on Instagram
+            Follow AVS MERIDIAN on Instagram
           </h2>
 
           <p className="lead font-serif fst-italic mb-3 text-muted">
@@ -48,8 +48,8 @@ export default function InstagramWidget() {
 
         {/* Elfsight Instagram Widget Embed Target */}
         <div className="instagram-widget-wrapper my-3">
-          <div 
-            className={`elfsight-app-${widgetId}`} 
+          <div
+            className={`elfsight-app-${widgetId}`}
             data-elfsight-app-lazy
           ></div>
         </div>

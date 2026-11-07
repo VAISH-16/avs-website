@@ -19,14 +19,14 @@ export default function LifeInsurancePage() {
         <div className="container py-4">
 
           {/* Real-Life Scenario Section */}
-          <RealLifeStoryCard 
+          <RealLifeStoryCard
             badge="REAL-LIFE LIFE INSURANCE SCENARIO"
             icon="bi-shield-heart-fill"
             title="Securing Your Family's Dreams When the Unexpected Happens"
-            scenarioText='Picture a dedicated parent and sole breadwinner driving back home on the highway after a long workday. An unexpected accident occurs, leaving the family without their primary provider. Beyond the devastating loss, monthly home loan EMIs of ₹65,000, school fees, and family living expenses arrive immediately. Because a ₹2 Crore Term Life policy was structured under the Married Women’s Property (MWP) Act with AVS Prosperity Consultancy, the insurance payout goes directly to the spouse without interference from creditors. The family keeps their home, the children attend college as planned, and financial dignity remains intact.'
+            scenarioText='Picture a dedicated parent and sole breadwinner driving back home on the highway after a long workday. An unexpected accident occurs, leaving the family without their primary provider. Beyond the devastating loss, monthly home loan EMIs of ₹65,000, school fees, and family living expenses arrive immediately. Because a ₹2 Crore Term Life policy was structured under the Married Women’s Property (MWP) Act with AVS MERIDIAN Consultancy, the insurance payout goes directly to the spouse without interference from creditors. The family keeps their home, the children attend college as planned, and financial dignity remains intact.'
             withoutProtection="Dependents face immediate financial collapse, potential eviction due to unpaid home loans, and compromised education for children."
             withAvsProtection="Guaranteed tax-free lump sum payout replaces monthly income, pays off outstanding debts, and secures your children's future education."
-            claimAssistancePerk="AVS Prosperity Consultancy assigns a dedicated claims concierge to assist the grieving family with hassle-free death claim documentation and fast-track settlement."
+            claimAssistancePerk="AVS MERIDIAN Consultancy assigns a dedicated claims concierge to assist the grieving family with hassle-free death claim documentation and fast-track settlement."
             ctaText="Calculate Your Life Cover"
             ctaLink="#consultation-form"
           />

@@ -1,5 +1,5 @@
 /**
- * Utility to fetch and cache official Google Reviews for AVS Prosperity Consultancy
+ * Utility to fetch and cache official Google Reviews for AVS MERIDIAN Consultancy
  * Uses Google Places API (New) & Legacy API with local/session caching.
  */
 
@@ -16,7 +16,7 @@ export const FALLBACK_REVIEWS = [
     authorPhoto: "",
     rating: 5,
     relativePublishTime: "Verified Google Review",
-    text: "Mrs. Archana Salunkhe and the team at AVS Prosperity have been managing our family's wealth portfolio and health policies for over 5 years. Exceptional clarity, transparent advice, and outstanding support during policy claims.",
+    text: "Mrs. Archana Salunkhe and the team at AVS MERIDIAN have been managing our family's wealth portfolio and health policies for over 5 years. Exceptional clarity, transparent advice, and outstanding support during policy claims.",
     googleMapsUri: DEFAULT_GOOGLE_MAPS_URL
   },
   {
@@ -43,7 +43,7 @@ export const FALLBACK_REVIEWS = [
     authorPhoto: "",
     rating: 5,
     relativePublishTime: "Verified Google Review",
-    text: "Professional, ethical, and ISO 9001 certified services. AVS Prosperity handled our corporate keyman insurance and wealth planning seamlessly with complete transparency.",
+    text: "Professional, ethical, and ISO 9001 certified services. AVS MERIDIAN handled our corporate keyman insurance and wealth planning seamlessly with complete transparency.",
     googleMapsUri: DEFAULT_GOOGLE_MAPS_URL
   },
   {
@@ -110,7 +110,7 @@ export async function fetchGoogleReviews() {
   if (!placeId || !apiKey) {
     const defaultResult = {
       status: 'SUCCESS',
-      businessName: 'AVS Prosperity Consultancy',
+      businessName: 'AVS MERIDIAN Consultancy',
       rating: 5.0,
       userRatingCount: 16,
       reviews: FALLBACK_REVIEWS,
@@ -133,7 +133,7 @@ export async function fetchGoogleReviews() {
 
       const result = {
         status: 'SUCCESS',
-        businessName: data.displayName?.text || 'AVS Prosperity Consultancy',
+        businessName: data.displayName?.text || 'AVS MERIDIAN Consultancy',
         rating: data.rating || 5.0,
         userRatingCount: data.userRatingCount || 16,
         reviews: normalizedReviews,
@@ -142,7 +142,7 @@ export async function fetchGoogleReviews() {
 
       try {
         sessionStorage.setItem(CACHE_KEY, JSON.stringify({ timestamp: Date.now(), data: result }));
-      } catch (e) {}
+      } catch (e) { }
 
       return result;
     } else {
@@ -150,7 +150,7 @@ export async function fetchGoogleReviews() {
       response = await fetch(
         `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=name,rating,user_ratings_total,reviews,url&key=${apiKey}`
       );
-      
+
       if (response.ok) {
         data = await response.json();
         if (data.result) {
@@ -159,7 +159,7 @@ export async function fetchGoogleReviews() {
 
           const result = {
             status: 'SUCCESS',
-            businessName: data.result.name || 'AVS Prosperity Consultancy',
+            businessName: data.result.name || 'AVS MERIDIAN Consultancy',
             rating: data.result.rating || 5.0,
             userRatingCount: data.result.user_ratings_total || 16,
             reviews: normalizedReviews,
@@ -168,7 +168,7 @@ export async function fetchGoogleReviews() {
 
           try {
             sessionStorage.setItem(CACHE_KEY, JSON.stringify({ timestamp: Date.now(), data: result }));
-          } catch (e) {}
+          } catch (e) { }
 
           return result;
         }
@@ -180,7 +180,7 @@ export async function fetchGoogleReviews() {
     console.warn('Error fetching Google Reviews, using fallback dataset:', error);
     return {
       status: 'SUCCESS',
-      businessName: 'AVS Prosperity Consultancy',
+      businessName: 'AVS MERIDIAN Consultancy',
       rating: 5.0,
       userRatingCount: 16,
       reviews: FALLBACK_REVIEWS,

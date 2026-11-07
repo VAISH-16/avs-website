@@ -19,14 +19,14 @@ export default function HealthInsurancePage() {
         <div className="container py-4">
 
           {/* Real-Life Scenario Section */}
-          <RealLifeStoryCard 
+          <RealLifeStoryCard
             badge="REAL-LIFE HEALTH SCENARIO"
             icon="bi-heart-pulse-fill"
             title="When Every Second Counts: Focus on Care, Not Hospital Bills"
-            scenarioText='Imagine having a peaceful lunch with your family on a weekend. Suddenly, your father experiences acute chest tightness and trouble breathing. Panic sets in as you rush him to the nearest hospital emergency room. The hospital requests an immediate admission deposit for ICU monitoring and specialized tests. Because you have comprehensive Health Insurance through AVS Prosperity Consultancy, there is no frantic calling around to arrange funds, selling assets, or depleting emergency savings. You and your family spend every moment focusing on dad’s recovery while AVS handles the paperwork.'
+            scenarioText='Imagine having a peaceful lunch with your family on a weekend. Suddenly, your father experiences acute chest tightness and trouble breathing. Panic sets in as you rush him to the nearest hospital emergency room. The hospital requests an immediate admission deposit for ICU monitoring and specialized tests. Because you have comprehensive Health Insurance through AVS MERIDIAN Consultancy, there is no frantic calling around to arrange funds, selling assets, or depleting emergency savings. You and your family spend every moment focusing on dad’s recovery while AVS handles the paperwork.'
             withoutProtection="Family members are forced to run around arranging cash, liquidating fixed deposits, or delaying critical medical procedures due to upfront deposit demands."
             withAvsProtection="Immediate cashless hospital admission approved. Your family remains by dad's bedside offering emotional strength while the medical team delivers undivided care."
-            claimAssistancePerk="With AVS Prosperity Consultancy, claim process assistance becomes easy & smooth — from cashless pre-authorization to final discharge settlement."
+            claimAssistancePerk="With AVS MERIDIAN Consultancy, claim process assistance becomes easy & smooth — from cashless pre-authorization to final discharge settlement."
             ctaText="Get Cashless Health Protection"
             ctaLink="#consultation-form"
           />

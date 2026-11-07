@@ -38,7 +38,7 @@ export default function Testimonials() {
 
   return (
     <main className="main pt-5 bg-ivory min-vh-100">
-      
+
       {/* 1. HERO SECTION */}
       <section className="page-header py-5 text-light position-relative" style={{ background: '#0B1F33', borderBottom: '2px solid #C9A24D' }}>
         <div className="container py-5 text-center">
@@ -49,7 +49,7 @@ export default function Testimonials() {
             Trusted by Our Clients
           </h1>
           <p className="lead font-serif text-light-opacity max-w-2xl mx-auto fs-5 mb-4 lh-lg" style={{ color: 'rgba(255, 255, 255, 0.85)' }}>
-            “Real experiences from clients who have trusted AVS Prosperity.”
+            “Real experiences from clients who have trusted AVS MERIDIAN.”
           </p>
 
           {/* DYNAMIC GOOGLE RATING SUMMARY */}

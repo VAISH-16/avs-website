@@ -4,7 +4,7 @@ export default function VisionMissionSection() {
   return (
     <section className="section py-5 bg-white border-top border-gold-subtle">
       <div className="container py-4">
-        
+
         <div className="text-center max-w-2xl mx-auto mb-5">
           <span className="fs-8 text-uppercase tracking-widest text-gold-accent font-sans fw-bold d-block mb-2">
             OUR CORE PURPOSE
@@ -13,7 +13,7 @@ export default function VisionMissionSection() {
             Vision &amp; Mission
           </h2>
           <p className="lead font-serif text-secondary fs-6 mb-0">
-            Guiding every financial strategy and client partnership at AVS Prosperity.
+            Guiding every financial strategy and client partnership at AVS MERIDIAN.
           </p>
         </div>
 

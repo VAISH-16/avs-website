@@ -15,7 +15,7 @@ export default function ClaimAssistance() {
 
   return (
     <main className="main pt-5">
-      
+
       {/* Page Header */}
       <section className="page-header py-5 dark-background text-light text-center">
         <div className="container py-4">
@@ -41,7 +41,7 @@ export default function ClaimAssistance() {
               </div>
             </div>
             <div className="col-lg-4 text-lg-end">
-              <a href="tel:+919322947512" className="btn btn-luxury-gold px-4 py-3 fw-bold text-uppercase tracking-wider">
+              <a href="tel:+919833798525" className="btn btn-luxury-gold px-4 py-3 fw-bold text-uppercase tracking-wider">
                 <i className="bi bi-telephone-fill me-2"></i> +91 93229 47512
               </a>
             </div>

@@ -10,7 +10,7 @@ export default function FinancialPlanningDetailPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedRequirement, setSelectedRequirement] = useState('');
-  
+
   const catIdMap = {
     'financial-health': '01',
     'goal-based': '02',
@@ -47,7 +47,7 @@ export default function FinancialPlanningDetailPage() {
     title: 'Financial Planning',
     tagline: '“Turn your financial goals into a structured roadmap for today, tomorrow and the years ahead.”',
     icon: 'bi-compass-fill',
-    description: 'AVS Prosperity assists clients in structuring their finances around their core life goals, investment priorities, protection needs, and long-term aspirations through personalized, conflict-free financial planning.',
+    description: 'AVS MERIDIAN assists clients in structuring their finances around their core life goals, investment priorities, protection needs, and long-term aspirations through personalized, conflict-free financial planning.',
     categories: [
       {
         number: '01',
@@ -186,11 +186,11 @@ export default function FinancialPlanningDetailPage() {
 
   return (
     <main className="main pt-5 bg-ivory min-vh-100">
-      
+
       {/* Page Header */}
       <section className="page-header py-5 text-light position-relative" style={{ background: 'linear-gradient(135deg, #0B1F33 0%, #071524 100%)', borderBottom: '2px solid #C9A24D' }}>
         <div className="container py-4">
-          
+
           {/* Navigation Back */}
           <div className="d-flex align-items-center justify-content-between mb-4">
             <Link to="/personal-finance" className="btn btn-outline-light btn-sm rounded-pill px-3 py-2 fs-7 fw-semibold">
@@ -255,14 +255,14 @@ export default function FinancialPlanningDetailPage() {
       {/* Main Content Section: Live Search Bar, Category Tabs & Sub-Section Cards */}
       <section className="section py-5">
         <div className="container py-2">
-          
+
           {/* Live Search Bar */}
           <div className="row justify-content-center mb-4">
             <div className="col-lg-8">
               <div className="p-3 bg-white rounded-4 shadow-sm border border-gold-subtle d-flex align-items-center gap-3">
                 <i className="bi bi-search fs-4 text-gold-accent ms-2" style={{ color: '#C9A24D' }}></i>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   className="form-control border-0 shadow-none fs-6 font-sans luxury-input p-0"
                   placeholder="Search planning solutions (e.g. child education, retirement, risk profiling, tax-saving, cash flow)..."
                   value={searchQuery}
@@ -270,7 +270,7 @@ export default function FinancialPlanningDetailPage() {
                   style={{ background: 'transparent' }}
                 />
                 {searchQuery && (
-                  <button 
+                  <button
                     onClick={() => setSearchQuery('')}
                     className="btn btn-link p-0 text-muted fs-6"
                     aria-label="Clear search"
@@ -327,9 +327,9 @@ export default function FinancialPlanningDetailPage() {
               const isOpen = searchQuery ? true : !!expandedCategories[cIdx];
               return (
                 <div key={cIdx} className="mb-4 bg-white rounded-4 shadow-sm border border-gold-subtle overflow-hidden">
-                  
+
                   {/* Interactive Category Card Header / Accordion Toggle */}
-                  <div 
+                  <div
                     onClick={() => toggleCategory(cIdx)}
                     className="p-4 d-flex align-items-center justify-content-between cursor-pointer select-none transition-all hover-bg-ivory"
                     style={{ background: isOpen ? '#0B1F33' : '#FFFFFF', color: isOpen ? '#FFFFFF' : '#0B1F33', cursor: 'pointer', transition: 'all 0.3s ease' }}
@@ -370,7 +370,7 @@ export default function FinancialPlanningDetailPage() {
                         {cat.items.map((item, iIdx) => (
                           <div key={iIdx} className="col-lg-4 col-md-6 col-12 d-flex">
                             <div className="card h-100 p-4 rounded-4 shadow-sm border-0 bg-white w-100 d-flex flex-column transition-all hover-lift" style={{ border: '1px solid #DDD8CC' }}>
-                              
+
                               {/* Title */}
                               <div className="d-flex align-items-start justify-content-between mb-2">
                                 <h4 className="font-playfair text-emerald fw-bold h5 mb-0" style={{ color: '#0B1F33' }}>
@@ -422,13 +422,13 @@ export default function FinancialPlanningDetailPage() {
               <p className="text-muted fs-7 mb-4">
                 We couldn't find any planning service matching "{searchQuery}". Try searching for another term or talk to our financial advisors directly.
               </p>
-              <button 
+              <button
                 onClick={() => setSearchQuery('')}
                 className="btn btn-outline-dark btn-sm rounded-pill px-4 py-2 me-2"
               >
                 Clear Search
               </button>
-              <button 
+              <button
                 onClick={() => handleOpenModal(searchQuery || 'Custom Planning Request')}
                 className="btn btn-luxury-gold btn-sm rounded-pill px-4 py-2"
                 style={{ background: '#C9A24D', color: '#0B1F33', border: 'none' }}
@@ -461,8 +461,8 @@ export default function FinancialPlanningDetailPage() {
                   Talk to an Advisor <i className="bi bi-headset ms-1"></i>
                 </button>
 
-                <Link 
-                  to="/personal-finance" 
+                <Link
+                  to="/personal-finance"
                   className="btn btn-outline-light px-4 py-3 text-uppercase tracking-wider fw-semibold fs-7 rounded-pill"
                 >
                   Back to Financial Planning <i className="bi bi-arrow-left ms-1"></i>

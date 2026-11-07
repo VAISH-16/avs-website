@@ -8,14 +8,14 @@ export default function RealLifeStoryCard({
   scenarioText,
   withoutProtection,
   withAvsProtection,
-  claimAssistancePerk = "With AVS Prosperity Consultancy, claim process assistance becomes easy, fast & 100% smooth.",
+  claimAssistancePerk = "With AVS MERIDIAN Consultancy, claim process assistance becomes easy, fast & 100% smooth.",
   ctaText = "Get Protected Now",
   ctaLink = "#consultation-form"
 }) {
   return (
     <div className="card border-0 rounded-4 shadow-sm overflow-hidden mb-5 bg-white position-relative" style={{ borderLeft: '5px solid #C9A24D' }}>
       <div className="card-body p-4 p-md-5">
-        
+
         {/* Header Badge & Title */}
         <div className="d-flex align-items-center gap-2 mb-3">
           <span className="badge px-3 py-2 rounded-pill bg-gold-subtle text-gold-accent fw-bold text-uppercase fs-8 tracking-wider">

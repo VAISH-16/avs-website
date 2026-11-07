@@ -11,9 +11,9 @@ export default function MobileStickyCTA({ onOpenModal }) {
         >
           GET PERSONALIZED GUIDANCE &rarr;
         </button>
-        <a 
-          href="https://wa.me/919322947512" 
-          target="_blank" 
+        <a
+          href="https://wa.me/919833798525"
+          target="_blank"
           rel="noopener noreferrer"
           className="btn px-3 py-3 text-white rounded-3 d-flex align-items-center justify-content-center"
           style={{ background: '#0B1F33' }}

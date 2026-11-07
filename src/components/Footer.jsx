@@ -7,26 +7,26 @@ export default function Footer() {
     <footer id="footer" className="footer dark-background text-light pt-5" style={{ backgroundColor: '#071524' }}>
       <div className="container footer-top py-5">
         <div className="row gy-4 g-lg-5">
-          
-          {/* Column 1: AVS PROSPERITY */}
+
+          {/* Column 1: AVS MERIDIAN */}
           <div className="col-lg-4 col-md-6 footer-about">
             <Link to="/" className="logo d-inline-block mb-3">
-              <img 
-                src="/assets/img/avs-logo.png" 
-                alt="AVS Prosperity Logo" 
-                className="rounded-2 shadow-sm" 
-                style={{ 
-                  height: '60px', 
-                  width: 'auto', 
-                  objectFit: 'contain', 
-                  backgroundColor: '#FFFFFF', 
-                  padding: '4px', 
-                  border: '1px solid rgba(201, 162, 77, 0.4)' 
+              <img
+                src="/assets/img/avs-logo.png"
+                alt="AVS MERIDIAN Logo"
+                className="rounded-2 shadow-sm"
+                style={{
+                  height: '60px',
+                  width: 'auto',
+                  objectFit: 'contain',
+                  backgroundColor: '#FFFFFF',
+                  padding: '4px',
+                  border: '1px solid rgba(201, 162, 77, 0.4)'
                 }}
               />
             </Link>
             <h3 className="font-serif fw-bold text-white fs-4 mb-1" style={{ color: '#FFFFFF' }}>
-              AVS PROSPERITY
+              AVS MERIDIAN
             </h3>
             <p className="brand-tagline font-serif fst-italic mb-2" style={{ color: '#C9A24D' }}>
               Prosperity with Protection.
@@ -64,7 +64,7 @@ export default function Footer() {
               </span>
               <div className="d-flex align-items-center gap-2">
                 <a
-                  href="tel:+919322947512"
+                  href="tel:+919833798525"
                   className="btn border-gold-subtle rounded-circle d-flex align-items-center justify-content-center p-0 hover-lift"
                   style={{ width: '42px', height: '42px', backgroundColor: 'rgba(255, 255, 255, 0.05)', color: '#C9A24D', border: '1px solid rgba(201, 162, 77, 0.35)' }}
                   title="Call Us Directly (+91 93229 47512)"
@@ -73,7 +73,7 @@ export default function Footer() {
                   <i className="bi bi-telephone-fill fs-6"></i>
                 </a>
                 <a
-                  href="https://wa.me/+919322947512"
+                  href="https://wa.me/+919833798525"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn border-gold-subtle rounded-circle d-flex align-items-center justify-content-center p-0 hover-lift"
@@ -84,7 +84,7 @@ export default function Footer() {
                   <i className="bi bi-whatsapp fs-5"></i>
                 </a>
                 <a
-                  href="https://www.linkedin.com/company/avs-prosperity-consultancy"
+                  href="https://www.linkedin.com/company/avs-meridian-consultancy"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn border-gold-subtle rounded-circle d-flex align-items-center justify-content-center p-0 hover-lift"
@@ -95,7 +95,7 @@ export default function Footer() {
                   <i className="bi bi-linkedin fs-5"></i>
                 </a>
                 <a
-                  href="https://www.instagram.com/avsprosperityconsultancy?igsh=MW9iejVrbGxzMGx0Yg=="
+                  href="https://www.instagram.com/avsmeridianconsultancy?igsh=MW9iejVrbGxzMGx0Yg=="
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn border-gold-subtle rounded-circle d-flex align-items-center justify-content-center p-0 hover-lift"
@@ -207,7 +207,7 @@ export default function Footer() {
         <div className="row mt-5 pt-4 border-top border-secondary border-opacity-25">
           <div className="col-12">
             <p className="fs-8 text-muted mb-0 lh-sm" style={{ color: 'rgba(255, 255, 255, 0.55)', fontSize: '0.8rem' }}>
-              <strong style={{ color: '#C9A24D' }}>ISO 9001:2015 Certified Company</strong> &bull; <strong style={{ color: '#C9A24D' }}>Regulatory Notice:</strong> AVS Prosperity Consultancy operates as an ISO 9001:2015 Certified Financial Advisory &amp; AMFI-Registered Mutual Fund Distributor. Mutual fund investments are subject to market risks; read all scheme-related documents carefully.
+              <strong style={{ color: '#C9A24D' }}>ISO 9001:2015 Certified Company</strong> &bull; <strong style={{ color: '#C9A24D' }}>Regulatory Notice:</strong> AVS MERIDIAN Consultancy operates as an ISO 9001:2015 Certified Financial Advisory &amp; AMFI-Registered Mutual Fund Distributor. Mutual fund investments are subject to market risks; read all scheme-related documents carefully.
             </p>
           </div>
         </div>
@@ -216,13 +216,13 @@ export default function Footer() {
       {/* Copyright Bar */}
       <div className="container copyright py-4 border-top border-secondary border-opacity-25 text-center">
         <p className="mb-1 fs-8 text-muted" style={{ color: 'rgba(255, 255, 255, 0.6)' }}>
-          &copy; {new Date().getFullYear()} <strong className="text-light">AVS Prosperity Consultancy</strong>. All Rights Reserved.
+          &copy; {new Date().getFullYear()} <strong className="text-light">AVS MERIDIAN Consultancy</strong>. All Rights Reserved.
         </p>
         <p className="mb-0 fs-8 text-muted" style={{ color: 'rgba(255, 255, 255, 0.6)' }}>
           Developed by{' '}
-          <a 
-            href="https://vaishnavisalunkhe.com/" 
-            target="_blank" 
+          <a
+            href="https://vaishnavisalunkhe.com/"
+            target="_blank"
             rel="noopener noreferrer"
             className="text-decoration-none fw-semibold"
             style={{ color: '#C9A24D' }}

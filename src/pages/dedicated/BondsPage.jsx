@@ -23,10 +23,10 @@ export default function BondsPage() {
             badge="FIXED INCOME & TAX RELIEF SCENARIO"
             icon="bi-cash-coin"
             title="Securing High-Yield Fixed Returns & Capital Preservation"
-            scenarioText='Whether you wish to earn stable annual interest or save capital gains tax on property sales under Section 54EC, AVS Prosperity Consultancy helps you allocate funds into sovereign, PSU, and AAA-rated Corporate Bonds (REC, PFC, NHAI, SGBs & Top Corporate Debentures). Your principal remains secure with regular, predictable coupon payouts.'
+            scenarioText='Whether you wish to earn stable annual interest or save capital gains tax on property sales under Section 54EC, AVS MERIDIAN Consultancy helps you allocate funds into sovereign, PSU, and AAA-rated Corporate Bonds (REC, PFC, NHAI, SGBs & Top Corporate Debentures). Your principal remains secure with regular, predictable coupon payouts.'
             withoutProtection="Unstructured investments often expose your wealth to equity volatility or low-yielding savings instruments."
             withAvsProtection="Guaranteed capital safety backed by Sovereign/AAA security with optimized tax efficiency."
-            claimAssistancePerk="AVS Prosperity Consultancy assists with complete application verification, bank coordination, and demat bond allotment."
+            claimAssistancePerk="AVS MERIDIAN Consultancy assists with complete application verification, bank coordination, and demat bond allotment."
             ctaText="Inquire About Bonds"
             ctaLink="#consultation-form"
           />

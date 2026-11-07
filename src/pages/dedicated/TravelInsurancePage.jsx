@@ -19,14 +19,14 @@ export default function TravelInsurancePage() {
         <div className="container py-4">
 
           {/* Real-Life Scenario Section */}
-          <RealLifeStoryCard 
+          <RealLifeStoryCard
             badge="REAL-LIFE TRAVEL SCENARIO"
             icon="bi-airplane-fill"
             title="Lost Luggage & Overseas ER: Direct Cashless Assistance"
-            scenarioText='Imagine landing at London Heathrow after a 10-hour flight for a long-planned family vacation. At baggage claim, your luggage containing essential garments and prescriptions is nowhere to be found. The next day, your child spikes a high fever requiring urgent emergency room admission costing £3,800 ($4,800+ USD). With Overseas Travel Insurance through AVS Prosperity Consultancy, medical bills are settled directly cashless in foreign currency through international TPA partners, and an emergency allowance for essential clothes/meds is transferred immediately. A potential vacation catastrophe turns into a smooth, guided resolution.'
+            scenarioText='Imagine landing at London Heathrow after a 10-hour flight for a long-planned family vacation. At baggage claim, your luggage containing essential garments and prescriptions is nowhere to be found. The next day, your child spikes a high fever requiring urgent emergency room admission costing £3,800 ($4,800+ USD). With Overseas Travel Insurance through AVS MERIDIAN Consultancy, medical bills are settled directly cashless in foreign currency through international TPA partners, and an emergency allowance for essential clothes/meds is transferred immediately. A potential vacation catastrophe turns into a smooth, guided resolution.'
             withoutProtection="Travelers face out-of-pocket medical bills in foreign currency (often exceeding tens of thousands of dollars), lost passport panics, and uncompensated flight cancellations."
             withAvsProtection="Direct cashless hospital settlement up to $500,000, emergency baggage allowance, passport replacement support, and trip interruption protection."
-            claimAssistancePerk="AVS Prosperity Consultancy's global assistance hotline coordinates directly with foreign hospitals and airlines so you can focus on enjoying your trip."
+            claimAssistancePerk="AVS MERIDIAN Consultancy's global assistance hotline coordinates directly with foreign hospitals and airlines so you can focus on enjoying your trip."
             ctaText="Get Overseas Travel Protection"
             ctaLink="#consultation-form"
           />

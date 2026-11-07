@@ -84,7 +84,7 @@ export default function Insights() {
                 <div className="accordion-item mb-3 border rounded-3 overflow-hidden">
                   <h2 className="accordion-header" id="faqOne">
                     <button className="accordion-button font-playfair fw-bold text-emerald" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                      How does AVS Prosperity Consultancy differ from online stock broking apps?
+                      How does AVS MERIDIAN Consultancy differ from online stock broking apps?
                     </button>
                   </h2>
                   <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#insightsFaq">

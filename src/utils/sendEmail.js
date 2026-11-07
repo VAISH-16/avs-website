@@ -1,14 +1,14 @@
 /**
- * Utility to send form submission notifications to avsprosperity@gmail.com
+ * Utility to send form submission notifications to avsmeridian@gmail.com
  * Multi-layer delivery:
  * Layer 1: Local / Hosting PHP script (/forms/contact.php)
- * Layer 2: FormSubmit.co API (Instant direct-to-email service to avsprosperity@gmail.com)
+ * Layer 2: FormSubmit.co API (Instant direct-to-email service to avsmeridian@gmail.com)
  * Layer 3: Web3Forms API (Configurable via VITE_WEB3FORMS_ACCESS_KEY in .env)
  */
 
 export async function sendEmailNotification(formData, formSource = 'Consultation Form') {
-  const recipientEmail = import.meta.env.VITE_NOTIFICATION_EMAIL || 'avsprosperity@gmail.com';
-  
+  const recipientEmail = import.meta.env.VITE_NOTIFICATION_EMAIL || 'avsmeridian@gmail.com';
+
   const payload = {
     name: formData.name || 'Website Lead',
     phone: formData.phone || 'Not provided',
@@ -57,7 +57,7 @@ export async function sendEmailNotification(formData, formSource = 'Consultation
     console.warn('PHP endpoint not available in static environment, trying direct mail APIs...', err);
   }
 
-  // 2. Direct Email API via FormSubmit.co (No server needed, sends to avsprosperity@gmail.com)
+  // 2. Direct Email API via FormSubmit.co (No server needed, sends to avsmeridian@gmail.com)
   try {
     const formSubmitResponse = await fetch(`https://formsubmit.co/ajax/${recipientEmail}`, {
       method: 'POST',
@@ -66,7 +66,7 @@ export async function sendEmailNotification(formData, formSource = 'Consultation
         'Accept': 'application/json'
       },
       body: JSON.stringify({
-        _subject: `New Lead: ${payload.name} (${payload.service}) - AVS Prosperity`,
+        _subject: `New Lead: ${payload.name} (${payload.service}) - AVS MERIDIAN`,
         _template: 'table',
         _captcha: 'false',
         name: payload.name,
@@ -101,8 +101,8 @@ export async function sendEmailNotification(formData, formSource = 'Consultation
         },
         body: JSON.stringify({
           access_key: accessKey,
-          subject: `New Lead: ${payload.name} (${payload.service}) - AVS Prosperity`,
-          from_name: 'AVS Prosperity Website',
+          subject: `New Lead: ${payload.name} (${payload.service}) - AVS MERIDIAN`,
+          from_name: 'AVS MERIDIAN Website',
           to_email: recipientEmail,
           replyto: payload.email !== 'Not provided' ? payload.email : recipientEmail,
           name: payload.name,

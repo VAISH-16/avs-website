@@ -95,7 +95,7 @@ export default function AskAVSChatbot() {
     // Insurance
     'health': {
       title: 'Health Insurance',
-      explanation: 'Health insurance helps protect you and your family from unexpected medical expenses. AVS Prosperity can help you understand suitable coverage based on your requirements.',
+      explanation: 'Health insurance helps protect you and your family from unexpected medical expenses. AVS MERIDIAN can help you understand suitable coverage based on your requirements.',
       route: '/insurance-category/health'
     },
     'life': {
@@ -189,13 +189,13 @@ export default function AskAVSChatbot() {
     }
   };
 
-  const whatsappUrl = `https://wa.me/919322947512?text=Hello%20AVS%20Prosperity,%20I%20am%20interested%20in%20${encodeURIComponent(selectedService?.title || 'Personalized Financial Guidance')}.`;
+  const whatsappUrl = `https://wa.me/919833798525?text=Hello%20AVS%20Prosperity,%20I%20am%20interested%20in%20${encodeURIComponent(selectedService?.title || 'Personalized Financial Guidance')}.`;
 
   return (
     <>
       {/* FLOATING TRIGGER BUTTON */}
-      <div 
-        className="ask-avs-trigger-wrapper position-fixed" 
+      <div
+        className="ask-avs-trigger-wrapper position-fixed"
         style={{ right: '20px', bottom: '20px', zIndex: 1040 }}
       >
         <button
@@ -220,7 +220,7 @@ export default function AskAVSChatbot() {
           )}
 
           {/* Online Dot */}
-          <span 
+          <span
             className="position-absolute top-0 end-0 p-1 bg-success border border-light rounded-circle"
             style={{ width: '14px', height: '14px' }}
           ></span>
@@ -228,7 +228,7 @@ export default function AskAVSChatbot() {
 
         {/* Hover Tooltip / Badge */}
         {!isOpen && (
-          <div 
+          <div
             className="ask-avs-tooltip position-absolute end-100 top-50 translate-middle-y me-3 bg-dark-navy text-white px-3 py-1 rounded-pill shadow-sm fs-8 fw-bold tracking-wider text-nowrap border border-gold-subtle d-none d-md-block"
             style={{ background: '#0B1F33', border: '1px solid rgba(201, 162, 77, 0.4)' }}
           >
@@ -239,7 +239,7 @@ export default function AskAVSChatbot() {
 
       {/* CHATBOT PANEL WINDOW */}
       {isOpen && (
-        <div 
+        <div
           className="ask-avs-panel position-fixed rounded-4 shadow-lg border border-gold-subtle d-flex flex-column overflow-hidden bg-white"
           style={{
             right: '20px',
@@ -254,12 +254,12 @@ export default function AskAVSChatbot() {
           }}
         >
           {/* HEADER */}
-          <div 
+          <div
             className="p-3 text-white d-flex align-items-center justify-content-between flex-shrink-0"
             style={{ background: 'linear-gradient(135deg, #0B1F33 0%, #071524 100%)', borderBottom: '2px solid #C9A24D' }}
           >
             <div className="d-flex align-items-center gap-3">
-              <div 
+              <div
                 className="rounded-circle d-flex align-items-center justify-content-center text-gold-accent shadow-sm"
                 style={{ width: '42px', height: '42px', background: 'rgba(201, 162, 77, 0.15)', border: '1px solid rgba(201, 162, 77, 0.4)' }}
               >
@@ -278,8 +278,8 @@ export default function AskAVSChatbot() {
               </div>
             </div>
 
-            <button 
-              type="button" 
+            <button
+              type="button"
               className="btn-close btn-close-white opacity-75"
               onClick={toggleChat}
               aria-label="Close Ask AVS"
@@ -288,7 +288,7 @@ export default function AskAVSChatbot() {
 
           {/* PANEL BODY CONTENT AREA */}
           <div className="p-3 flex-grow-1 overflow-y-auto bg-ivory">
-            
+
             {/* VIEW 0: MAIN MENU */}
             {currentView === 'main' && (
               <div className="space-y-3">
@@ -299,7 +299,7 @@ export default function AskAVSChatbot() {
                     <span className="fs-8 fw-bold text-uppercase font-sans" style={{ color: '#0B1F33', fontSize: '0.7rem' }}>ISO 9001:2015 Certified</span>
                   </div>
                   <p className="font-serif text-dark fw-bold mb-2 fs-6">
-                    Hello! Welcome to AVS Prosperity. 👋
+                    Hello! Welcome to AVS MERIDIAN. 👋
                   </p>
                   <p className="font-sans text-muted fs-7 mb-3 lh-base">
                     I can help you explore our services, understand your insurance options, and connect you with an AVS advisor.
@@ -311,8 +311,8 @@ export default function AskAVSChatbot() {
 
                 {/* Quick Action Category Buttons */}
                 <div className="d-grid gap-2">
-                  <button 
-                    type="button" 
+                  <button
+                    type="button"
                     className="btn btn-outline-dark text-start p-3 rounded-3 border-gold-subtle bg-white shadow-sm hover-gold d-flex align-items-center justify-content-between"
                     onClick={() => navigateToView('insurance')}
                   >
@@ -320,8 +320,8 @@ export default function AskAVSChatbot() {
                     <i className="bi bi-chevron-right text-gold-accent fs-7"></i>
                   </button>
 
-                  <button 
-                    type="button" 
+                  <button
+                    type="button"
                     className="btn btn-outline-dark text-start p-3 rounded-3 border-gold-subtle bg-white shadow-sm hover-gold d-flex align-items-center justify-content-between"
                     onClick={() => navigateToView('planning')}
                   >
@@ -329,8 +329,8 @@ export default function AskAVSChatbot() {
                     <i className="bi bi-chevron-right text-gold-accent fs-7"></i>
                   </button>
 
-                  <button 
-                    type="button" 
+                  <button
+                    type="button"
                     className="btn btn-outline-dark text-start p-3 rounded-3 border-gold-subtle bg-white shadow-sm hover-gold d-flex align-items-center justify-content-between"
                     onClick={() => navigateToView('claims')}
                   >
@@ -338,8 +338,8 @@ export default function AskAVSChatbot() {
                     <i className="bi bi-chevron-right text-gold-accent fs-7"></i>
                   </button>
 
-                  <button 
-                    type="button" 
+                  <button
+                    type="button"
                     className="btn btn-luxury-gold p-3 rounded-3 shadow-sm d-flex align-items-center justify-content-between"
                     style={{ background: '#0B1F33', color: '#FFFFFF', border: '1px solid #C9A24D' }}
                     onClick={() => navigateToView('lead_form', { title: 'General Guidance' })}
@@ -348,8 +348,8 @@ export default function AskAVSChatbot() {
                     <i className="bi bi-arrow-right text-gold-accent fs-7"></i>
                   </button>
 
-                  <button 
-                    type="button" 
+                  <button
+                    type="button"
                     className="btn btn-outline-secondary p-2 rounded-3 text-center fs-8 fw-bold text-uppercase tracking-wider"
                     onClick={() => navigateToView('lead_form', { title: 'Call Back Request' })}
                   >

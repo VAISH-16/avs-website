@@ -34,7 +34,7 @@ export default function About() {
                 <span style={{ color: '#C9A24D' }}>Protecting What Matters.</span>
               </h1>
               <p className="lead font-serif text-light-opacity max-w-2xl mx-auto fs-5 mb-4 lh-lg">
-                “At AVS Prosperity, we believe financial planning is not just about investing money. It is about making informed decisions today to create security, achieve meaningful goals and build a prosperous tomorrow.”
+                “At AVS MERIDIAN, we believe financial planning is not just about investing money. It is about making informed decisions today to create security, achieve meaningful goals and build a prosperous tomorrow.”
               </p>
               <div className="d-flex flex-wrap justify-content-center gap-3">
                 <button
@@ -92,7 +92,7 @@ export default function About() {
                   MEET THE FOUNDER
                 </span>
                 <h2 className="display-5 font-playfair fw-bold mb-3" style={{ color: '#0B1F33' }}>
-                  The Person Behind AVS Prosperity
+                  The Person Behind AVS MERIDIAN
                 </h2>
 
                 <div className="p-3 mb-4 rounded-3 bg-ivory border-start border-4 border-gold shadow-sm">
@@ -103,7 +103,7 @@ export default function About() {
 
                 <div className="space-y-3 font-sans text-muted fs-6 lh-relaxed" style={{ color: '#5F6B73' }}>
                   <p>
-                    AVS Prosperity was born out of a desire to bring genuine, personal clarity to financial planning. Over the years, I observed how many individuals and families struggled not from a lack of financial products, but from a lack of objective, personal direction.
+                    AVS MERIDIAN was born out of a desire to bring genuine, personal clarity to financial planning. Over the years, I observed how many individuals and families struggled not from a lack of financial products, but from a lack of objective, personal direction.
                   </p>
                   <p>
                     My philosophy is simple: understand the person first. Before we discuss asset allocation or policy terms, we listen to your life story, your family’s priorities, and what true financial peace of mind means to you.
@@ -187,12 +187,12 @@ export default function About() {
 
 
 
-      {/* 7. WHY AVS PROSPERITY */}
+      {/* 7. WHY AVS MERIDIAN */}
       <section className="section py-5 bg-ivory">
         <div className="container py-4">
           <div className="text-center max-w-2xl mx-auto mb-5">
             <span className="fs-8 text-uppercase tracking-widest text-gold-accent font-sans fw-bold d-block mb-2">
-              WHY AVS PROSPERITY
+              WHY AVS MERIDIAN
             </span>
             <h2 className="display-5 font-playfair fw-bold mb-3" style={{ color: '#0B1F33' }}>
               A Relationship Beyond a Transaction.

@@ -31,7 +31,7 @@ $contactMethod = !empty($input['contactMethod']) ? htmlspecialchars($input['cont
 $message = !empty($input['message']) ? htmlspecialchars($input['message']) : (!empty($_POST['message']) ? htmlspecialchars($_POST['message']) : 'No message details provided');
 $formSource = !empty($input['formSource']) ? htmlspecialchars($input['formSource']) : 'Website Form';
 
-$targetEmail = 'avsprosperity@gmail.com';
+$targetEmail = 'avsmeridian@gmail.com';
 
 $mail = new PHPMailer(true);
 
@@ -40,21 +40,21 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'avsprosperity@gmail.com';
+    $mail->Username   = 'avsmeridian@gmail.com';
     $mail->Password   = 'swmyumktmoltncau'; // Gmail App password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
 
     // Recipients
-    $mail->setFrom('avsprosperity@gmail.com', 'AVS Prosperity Website');
-    $mail->addAddress($targetEmail, 'AVS Prosperity');
+    $mail->setFrom('avsmeridian@gmail.com', 'AVS MERIDIAN Website');
+    $mail->addAddress($targetEmail, 'AVS MERIDIAN');
     if (!empty($email) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $mail->addReplyTo($email, $name);
     }
 
     // Content
     $mail->isHTML(true);
-    $mail->Subject = "New Consultation Request: {$name} - {$service} (AVS Prosperity)";
+    $mail->Subject = "New Consultation Request: {$name} - {$service} (AVS MERIDIAN)";
 
     $mail->Body = "
     <div style='font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #C9A24D; padding: 24px; border-radius: 12px; background-color: #FFFFFF;'>
@@ -70,7 +70,7 @@ try {
         <p style='margin: 8px 0 0 0; color: #555;'>" . nl2br($message) . "</p>
       </div>
       <hr style='border: none; border-top: 1px solid #EEEEEE; margin: 20px 0;'>
-      <p style='font-size: 12px; color: #888888; margin-bottom: 0;'>This email was sent automatically from the AVS Prosperity website consultation form to <strong>{$targetEmail}</strong>.</p>
+      <p style='font-size: 12px; color: #888888; margin-bottom: 0;'>This email was sent automatically from the AVS MERIDIAN website consultation form to <strong>{$targetEmail}</strong>.</p>
     </div>
     ";
 

@@ -55,7 +55,7 @@ export default function Header() {
         <Link to="/" className="logo d-flex align-items-center me-auto me-lg-0 text-decoration-none" onClick={closeMobileNav}>
           <img
             src="/assets/img/avs-logo.png"
-            alt="AVS Prosperity Logo"
+            alt="AVS MERIDIAN Logo"
             className="me-2 rounded-2 shadow-sm"
             style={{
               height: '56px',

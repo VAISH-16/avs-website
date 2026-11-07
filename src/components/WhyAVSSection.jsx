@@ -27,12 +27,12 @@ export default function WhyAVSSection() {
   return (
     <section className="section py-5 position-relative border-bottom border-gold-subtle" style={{ backgroundColor: '#FFFFFF' }}>
       <div className="container py-5">
-        
+
         {/* Heading */}
         <div className="row justify-content-center text-center mb-5">
           <div className="col-lg-8">
             <h2 className="display-4 font-serif text-emerald fw-bold mb-3" style={{ color: '#0B1F33' }}>
-              WHY AVS PROSPERITY?
+              WHY AVS MERIDIAN?
             </h2>
             <div className="luxury-divider mx-auto" style={{ width: '60px', height: '2px', backgroundColor: '#C9A24D' }}></div>
           </div>
@@ -42,18 +42,18 @@ export default function WhyAVSSection() {
         <div className="row g-4 justify-content-center">
           {points.map((item, idx) => (
             <div key={idx} className="col-md-6 col-lg-3">
-              <div 
+              <div
                 className="p-4 p-xl-4 rounded-4 bg-white border border-gold-subtle text-center h-100 d-flex flex-column justify-content-between shadow-sm transition-all hover-lift"
                 style={{ borderRadius: '18px', transition: 'all 0.3s ease' }}
               >
                 <div>
-                  <div 
+                  <div
                     className="d-inline-flex align-items-center justify-content-center rounded-circle mb-4"
                     style={{ width: '56px', height: '56px', backgroundColor: 'rgba(201, 162, 77, 0.12)', border: '1px solid rgba(201, 162, 77, 0.3)' }}
                   >
                     <i className={`bi ${item.icon} fs-3`} style={{ color: '#C9A24D' }}></i>
                   </div>
-                  
+
                   <h3 className="font-serif fw-bold fs-5 mb-3" style={{ color: '#0B1F33', letterSpacing: '0.04em' }}>
                     {item.title}
                   </h3>

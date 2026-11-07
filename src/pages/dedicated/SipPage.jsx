@@ -19,14 +19,14 @@ export default function SipPage() {
         <div className="container py-4">
 
           {/* Real-Life Scenario Section */}
-          <RealLifeStoryCard 
+          <RealLifeStoryCard
             badge="REAL-LIFE SIP SCENARIO"
             icon="bi-arrow-repeat"
             title="Automating Retirement Independence with ₹15,000/Month"
             scenarioText='Imagine setting up an automated ₹15,000 monthly SIP when you turn 30. During market crashes, instead of panicking, rupee cost averaging automatically buys more mutual fund units at lower prices. By age 50, with annual step-ups matching your salary hikes, your accumulated portfolio surpasses ₹1.8 Crores. You achieve financial independence early, allowing you to pursue your passions or retire on your own terms with automated Monthly Systematic Withdrawal Plans (SWP).'
             withoutProtection="Money remains idle in savings accounts earning 3% interest (losing value to inflation), or gets spent on impulse purchases."
             withAvsProtection="Automated wealth building turns modest monthly savings into multi-crore compounding wealth over 10-15 year horizons."
-            claimAssistancePerk="AVS Prosperity Consultancy assists with automated auto-debit setup, step-up tracking, and goal-indexed fund selection."
+            claimAssistancePerk="AVS MERIDIAN Consultancy assists with automated auto-debit setup, step-up tracking, and goal-indexed fund selection."
             ctaText="Start Your SIP Journey"
             ctaLink="#consultation-form"
           />

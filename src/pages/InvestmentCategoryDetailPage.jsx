@@ -199,7 +199,7 @@ export default function InvestmentCategoryDetailPage() {
 
   // Filter sections based on search query
   const filteredSections = category.sections.map(section => {
-    const matchingItems = section.items.filter(item => 
+    const matchingItems = section.items.filter(item =>
       item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       item.summary.toLowerCase().includes(searchQuery.toLowerCase())
     );
@@ -210,11 +210,11 @@ export default function InvestmentCategoryDetailPage() {
 
   return (
     <main className="main pt-5 bg-ivory min-vh-100">
-      
+
       {/* Category Header Banner */}
       <section className="page-header py-5 text-light position-relative" style={{ background: 'linear-gradient(135deg, #0B1F33 0%, #071524 100%)', borderBottom: '2px solid #C9A24D' }}>
         <div className="container py-4">
-          
+
           {/* Breadcrumb & Navigation Back */}
           <div className="d-flex align-items-center justify-content-between mb-4">
             <Link to="/investments" className="btn btn-outline-light btn-sm rounded-pill px-3 py-2 fs-7 fw-semibold">
@@ -279,14 +279,14 @@ export default function InvestmentCategoryDetailPage() {
       {/* Main Content Section: Live Search Bar & Solutions Grid */}
       <section className="section py-5">
         <div className="container py-2">
-          
+
           {/* Live Search Bar */}
           <div className="row justify-content-center mb-5">
             <div className="col-lg-8">
               <div className="p-3 bg-white rounded-4 shadow-sm border border-gold-subtle d-flex align-items-center gap-3">
                 <i className="bi bi-search fs-4 text-gold-accent ms-2" style={{ color: '#C9A24D' }}></i>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   className="form-control border-0 shadow-none fs-6 font-sans luxury-input p-0"
                   placeholder={`Search ${category.title} options (e.g. flexi cap, ncd, sip, education, corporate bond)...`}
                   value={searchQuery}
@@ -294,7 +294,7 @@ export default function InvestmentCategoryDetailPage() {
                   style={{ background: 'transparent' }}
                 />
                 {searchQuery && (
-                  <button 
+                  <button
                     onClick={() => setSearchQuery('')}
                     className="btn btn-link p-0 text-muted fs-6"
                     aria-label="Clear search"
@@ -320,7 +320,7 @@ export default function InvestmentCategoryDetailPage() {
           {filteredSections.length > 0 ? (
             filteredSections.map((sec, sIdx) => (
               <div key={sIdx} className="mb-5">
-                
+
                 {/* Section Sub-heading */}
                 <div className="d-flex align-items-center gap-3 mb-4 pb-2 border-bottom border-gold-subtle">
                   <div className="p-2 rounded-circle bg-emerald text-gold-accent d-inline-flex align-items-center justify-content-center" style={{ width: '36px', height: '36px', background: '#0B1F33', color: '#C9A24D' }}>
@@ -341,7 +341,7 @@ export default function InvestmentCategoryDetailPage() {
                   {sec.items.map((item, iIdx) => (
                     <div key={iIdx} className="col-lg-4 col-md-6 col-12 d-flex">
                       <div className="card h-100 p-4 rounded-4 shadow-sm border-0 bg-white w-100 d-flex flex-column transition-all hover-lift" style={{ border: '1px solid #DDD8CC' }}>
-                        
+
                         {/* Card Top Icon & Title */}
                         <div className="d-flex align-items-start justify-content-between mb-2">
                           <h4 className="font-playfair text-emerald fw-bold h5 mb-0" style={{ color: '#0B1F33' }}>
@@ -390,13 +390,13 @@ export default function InvestmentCategoryDetailPage() {
               <p className="text-muted fs-7 mb-4">
                 We couldn't find any option matching "{searchQuery}". Try searching for another keyword or speak with our wealth advisors.
               </p>
-              <button 
+              <button
                 onClick={() => setSearchQuery('')}
                 className="btn btn-outline-dark btn-sm rounded-pill px-4 py-2 me-2"
               >
                 Clear Search
               </button>
-              <button 
+              <button
                 onClick={() => handleOpenModal(searchQuery || 'Custom Wealth Consultation')}
                 className="btn btn-luxury-gold btn-sm rounded-pill px-4 py-2"
                 style={{ background: '#C9A24D', color: '#0B1F33', border: 'none' }}
@@ -414,10 +414,10 @@ export default function InvestmentCategoryDetailPage() {
 
             <div className="p-4 rounded-4 bg-white border border-gold-subtle text-start max-w-3xl mx-auto shadow-sm">
               <span className="fs-8 text-uppercase tracking-widest text-gold-accent font-sans fw-bold d-block mb-1">
-                AVS PROSPERITY COMPLIANCE &amp; DISCLOSURE
+                AVS MERIDIAN COMPLIANCE &amp; DISCLOSURE
               </span>
               <p className="fs-8 text-muted mb-0 leading-relaxed">
-                AVS Prosperity Consultancy is an ISO 9001:2015 Certified Company and AMFI-registered mutual fund distributor facilitating scheme transactions across premier AMCs in India. Investments are subject to market risks; please read scheme information documents carefully before investing. Past performance is not indicative of future returns.
+                AVS MERIDIAN Consultancy is an ISO 9001:2015 Certified Company and AMFI-registered mutual fund distributor facilitating scheme transactions across premier AMCs in India. Investments are subject to market risks; please read scheme information documents carefully before investing. Past performance is not indicative of future returns.
               </p>
             </div>
           </div>

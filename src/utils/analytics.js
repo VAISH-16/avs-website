@@ -1,5 +1,5 @@
 /**
- * AVS Prosperity Conversion Analytics Helper
+ * AVS MERIDIAN Conversion Analytics Helper
  * Tracks lead conversion funnel events safely.
  */
 

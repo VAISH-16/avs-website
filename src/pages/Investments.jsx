@@ -51,7 +51,7 @@ export default function Investments() {
 
   return (
     <main className="main pt-5 bg-ivory min-vh-100">
-      
+
       {/* Page Header */}
       <section className="page-header py-5 dark-background text-light text-center" style={{ background: 'linear-gradient(135deg, #0B1F33 0%, #071524 100%)', borderBottom: '2px solid #C9A24D' }}>
         <div className="container py-4">
@@ -83,7 +83,7 @@ export default function Investments() {
       {/* Main 3 Premium Investment Cards Grid */}
       <section className="section py-5">
         <div className="container py-4">
-          
+
           <div className="row justify-content-center text-center mb-5">
             <div className="col-lg-8">
               <span className="fs-8 text-uppercase tracking-widest text-gold-accent font-sans fw-bold d-block mb-2">
@@ -102,7 +102,7 @@ export default function Investments() {
           <div className="row g-4 justify-content-center">
             {mainCards.map((card) => (
               <div key={card.id} className="col-lg-4 col-md-6 col-12 d-flex">
-                <div 
+                <div
                   onClick={() => handleCardClick(card.link, card.title)}
                   className="card h-100 p-4 p-md-5 rounded-4 shadow-sm border-0 bg-white transition-all hover-lift cursor-pointer user-select-none w-100 d-flex flex-column"
                   style={{
@@ -174,7 +174,7 @@ export default function Investments() {
               <i className="bi bi-patch-check-fill text-gold-accent me-2" style={{ color: '#C9A24D' }}></i> ISO 9001:2015 Certified Company &amp; AMFI Registered Distributor
             </h5>
             <p className="text-muted fs-7 mb-0 leading-relaxed">
-              AVS Prosperity Consultancy is an ISO 9001:2015 Certified Financial Advisory &amp; Risk Management firm acting as an AMFI-registered distributor facilitating scheme selection across leading Indian Asset Management Companies. Mutual fund investments are subject to market risks; please read scheme information documents carefully before investing. We do not provide guaranteed returns or bank deposit products.
+              AVS MERIDIAN Consultancy is an ISO 9001:2015 Certified Financial Advisory &amp; Risk Management firm acting as an AMFI-registered distributor facilitating scheme selection across leading Indian Asset Management Companies. Mutual fund investments are subject to market risks; please read scheme information documents carefully before investing. We do not provide guaranteed returns or bank deposit products.
             </p>
           </div>
         </div>

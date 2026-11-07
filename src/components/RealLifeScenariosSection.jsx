@@ -7,7 +7,7 @@ const scenarios = [
     category: 'Health Insurance',
     icon: 'bi-heart-pulse-fill',
     title: 'Emergency Medical Hospitalization During Family Lunch',
-    story: 'You are having a peaceful Sunday lunch with your family. Suddenly, your father experiences severe chest tightness and trouble breathing. Panic strikes as you rush him to the hospital emergency room. The hospital requests an immediate admission deposit for ICU care. Because you have comprehensive Health Insurance through AVS Prosperity Consultancy, there is no frantic pooling of emergency funds or selling assets. You and your family spend every moment caring for dad while AVS handles the cashless claim approval seamlessly.',
+    story: 'You are having a peaceful Sunday lunch with your family. Suddenly, your father experiences severe chest tightness and trouble breathing. Panic strikes as you rush him to the hospital emergency room. The hospital requests an immediate admission deposit for ICU care. Because you have comprehensive Health Insurance through AVS MERIDIAN Consultancy, there is no frantic pooling of emergency funds or selling assets. You and your family spend every moment caring for dad while AVS handles the cashless claim approval seamlessly.',
     link: '/health-insurance',
     ctaText: 'Explore Health Insurance'
   },
@@ -16,7 +16,7 @@ const scenarios = [
     category: 'Life & Term Cover',
     icon: 'bi-shield-heart-fill',
     title: 'Highway Accident: Protecting Family Dignity & Home Loan',
-    story: 'A dedicated family breadwinner is driving home on the highway after work when an unexpected truck collision occurs. Beyond the tragic emotional loss, monthly home loan EMIs of ₹65,000 and children\'s school fees arrive immediately. With a ₹2 Crore Term Life Cover structured under the MWP Act by AVS Prosperity Consultancy, the full payout goes directly to the spouse without interference from creditors. The family retains their home and the kids complete university without financial compromise.',
+    story: 'A dedicated family breadwinner is driving home on the highway after work when an unexpected truck collision occurs. Beyond the tragic emotional loss, monthly home loan EMIs of ₹65,000 and children\'s school fees arrive immediately. With a ₹2 Crore Term Life Cover structured under the MWP Act by AVS MERIDIAN Consultancy, the full payout goes directly to the spouse without interference from creditors. The family retains their home and the kids complete university without financial compromise.',
     link: '/life-insurance',
     ctaText: 'Explore Life Cover'
   },
@@ -43,7 +43,7 @@ const scenarios = [
     category: 'Business & Asset Cover',
     icon: 'bi-building-fill',
     title: 'Factory Short-Circuit Fire: Fast-Tracking Recovery',
-    story: 'At 2:00 AM on a festival holiday, an electrical short-circuit triggers a fire inside a factory, destroying ₹65 Lakhs worth of raw materials and machinery. With Commercial Fire & Special Perils Cover guided by AVS Prosperity Consultancy, an emergency surveyor is deployed within 24 hours. Replacement machinery and stock losses are fully reimbursed, preserving employee payroll and business operations.',
+    story: 'At 2:00 AM on a festival holiday, an electrical short-circuit triggers a fire inside a factory, destroying ₹65 Lakhs worth of raw materials and machinery. With Commercial Fire & Special Perils Cover guided by AVS MERIDIAN Consultancy, an emergency surveyor is deployed within 24 hours. Replacement machinery and stock losses are fully reimbursed, preserving employee payroll and business operations.',
     link: '/business-insurance',
     ctaText: 'Explore Business Cover'
   }
@@ -61,7 +61,7 @@ export default function RealLifeScenariosSection() {
           <h2 className="display-5 font-playfair text-emerald fw-bold mt-2">Real-Life Claim Scenarios</h2>
           <div className="luxury-divider mx-auto my-3"></div>
           <p className="text-muted font-serif">
-            Click any insurance category below to see how AVS Prosperity Consultancy protects families in real-world emergencies.
+            Click any insurance category below to see how AVS MERIDIAN Consultancy protects families in real-world emergencies.
           </p>
         </div>
 
@@ -71,11 +71,10 @@ export default function RealLifeScenariosSection() {
             <button
               key={s.id}
               onClick={() => setActiveTab(s.id)}
-              className={`btn rounded-pill px-3 py-2 fw-semibold fs-7 transition-all ${
-                activeTab === s.id
+              className={`btn rounded-pill px-3 py-2 fw-semibold fs-7 transition-all ${activeTab === s.id
                   ? 'btn-dark text-gold-accent shadow-sm'
                   : 'btn-outline-secondary text-dark bg-white'
-              }`}
+                }`}
               style={{ border: activeTab === s.id ? '2px solid #C9A24D' : '1px solid #DDD8CC' }}
             >
               <i className={`bi ${s.icon} me-2`}></i>
@@ -109,7 +108,7 @@ export default function RealLifeScenariosSection() {
               <div>
                 <strong className="text-gold-accent d-block font-playfair">AVS Claim Assistance Guarantee</strong>
                 <span className="text-light-opacity fs-7">
-                  With AVS Prosperity Consultancy, claim process assistance becomes easy, fast & 100% smooth.
+                  With AVS MERIDIAN Consultancy, claim process assistance becomes easy, fast & 100% smooth.
                 </span>
               </div>
             </div>

@@ -29,7 +29,7 @@ export default function TestimonialsPreview() {
   return (
     <section className="section py-5 position-relative border-bottom border-gold-subtle" style={{ backgroundColor: '#F8F6F0' }}>
       <div className="container py-5">
-        
+
         {/* Section Header */}
         <div className="row justify-content-center text-center mb-4">
           <div className="col-lg-8">
@@ -41,7 +41,7 @@ export default function TestimonialsPreview() {
             </h2>
 
             <p className="lead font-serif fst-italic mb-3" style={{ color: '#5F6B73' }}>
-              “Real experiences from clients who have trusted AVS Prosperity.”
+              “Real experiences from clients who have trusted AVS MERIDIAN.”
             </p>
 
             {/* Dynamic Google Rating Banner */}
