@@ -46,8 +46,8 @@ export default function Contact() {
                 </div>
                 <h4 className="font-serif fw-bold" style={{ color: '#0B1F33' }}>Helpline Numbers</h4>
                 <p className="text-muted fs-7 mb-0 lh-base">
-                  <a href="tel:+919833798525" className="text-dark hover-gold font-medium d-block">+91 93229 47512</a>
-                  <a href="tel:+919930315079" className="text-dark hover-gold font-medium d-block">+91 93722 33501</a>
+                  <a href="tel:+919833798525" className="text-dark hover-gold font-medium d-block">+91 98337 98525</a>
+                  <a href="tel:+919930315079" className="text-dark hover-gold font-medium d-block">+91 99303 15079</a>
                 </p>
               </div>
             </div>
@@ -88,7 +88,7 @@ export default function Contact() {
                     <i className="bi bi-telephone-fill fs-4"></i>
                   </div>
                   <span className="fw-bold fs-7 text-dark d-block">Direct Call</span>
-                  <span className="fs-8 text-muted">+91 93229 47512</span>
+                  <span className="fs-8 text-muted">+91 98337 98525</span>
                 </a>
               </div>
 
@@ -258,8 +258,8 @@ export default function Contact() {
                         <i className="bi bi-telephone-fill fs-5" style={{ color: '#C9A24D' }}></i>
                         <div>
                           <strong className="d-block fs-7 text-dark">Helpline Desk</strong>
-                          <a href="tel:+919833798525" className="fs-8 text-dark hover-gold font-medium d-block text-decoration-none">+91 93229 47512</a>
-                          <a href="tel:+919930315079" className="fs-8 text-dark hover-gold font-medium d-block text-decoration-none">+91 93722 33501</a>
+                          <a href="tel:+919833798525" className="fs-8 text-dark hover-gold font-medium d-block text-decoration-none">+91 98337 98525</a>
+                          <a href="tel:+919930315079" className="fs-8 text-dark hover-gold font-medium d-block text-decoration-none">+91 99303 15079</a>
                         </div>
                       </div>
                     </div>

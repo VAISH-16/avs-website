@@ -42,7 +42,7 @@ export default function ClaimAssistance() {
             </div>
             <div className="col-lg-4 text-lg-end">
               <a href="tel:+919833798525" className="btn btn-luxury-gold px-4 py-3 fw-bold text-uppercase tracking-wider">
-                <i className="bi bi-telephone-fill me-2"></i> +91 93229 47512
+                <i className="bi bi-telephone-fill me-2"></i> +91 98337 98525
               </a>
             </div>
           </div>

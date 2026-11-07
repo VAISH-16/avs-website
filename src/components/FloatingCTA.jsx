@@ -20,7 +20,7 @@ export default function FloatingCTA() {
         aria-label="Direct Phone Consultation"
       >
         <i className="bi bi-telephone-fill"></i>
-        <span className="call-text">Call +91 93229 47512</span>
+        <span className="call-text">Call +91 98337 98525</span>
       </a>
     </>
   );

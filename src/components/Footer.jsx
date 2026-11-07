@@ -67,7 +67,7 @@ export default function Footer() {
                   href="tel:+919833798525"
                   className="btn border-gold-subtle rounded-circle d-flex align-items-center justify-content-center p-0 hover-lift"
                   style={{ width: '42px', height: '42px', backgroundColor: 'rgba(255, 255, 255, 0.05)', color: '#C9A24D', border: '1px solid rgba(201, 162, 77, 0.35)' }}
-                  title="Call Us Directly (+91 93229 47512)"
+                  title="Call Us Directly (+91 98337 98525)"
                   aria-label="Call Us Directly"
                 >
                   <i className="bi bi-telephone-fill fs-6"></i>
